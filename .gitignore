@@ -1,0 +1,5 @@
+﻿node_modules/
+multikpop-main/
+music/user-*
+music/user-tracks.json
+.env

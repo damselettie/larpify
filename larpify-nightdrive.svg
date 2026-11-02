@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="1080" viewBox="0 0 1420 1080" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="710" y1="0" x2="710" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#11152A"/>
+      <stop offset=".52" stop-color="#29214C"/>
+      <stop offset="1" stop-color="#131827"/>
+    </linearGradient>
+    <linearGradient id="horizon" x1="710" y1="370" x2="710" y2="810" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F05BA5" stop-opacity=".85"/>
+      <stop offset=".45" stop-color="#8755C6" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#141827" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="road" x1="710" y1="595" x2="710" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#39325F"/>
+      <stop offset=".4" stop-color="#252239"/>
+      <stop offset="1" stop-color="#101720"/>
+    </linearGradient>
+    <linearGradient id="car" x1="710" y1="784" x2="710" y2="955" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#566747"/>
+      <stop offset=".42" stop-color="#293548"/>
+      <stop offset="1" stop-color="#151C29"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="0" cy="0" r="1" gradientTransform="matrix(0 158 -158 0 1060 182)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D3F45B" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#D3F45B" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="windows" width="48" height="55" patternUnits="userSpaceOnUse">
+      <rect x="11" y="12" width="12" height="20" rx="2" fill="#D3F45B" fill-opacity=".72"/>
+      <rect x="31" y="12" width="9" height="20" rx="2" fill="#88DDF2" fill-opacity=".44"/>
+    </pattern>
+    <pattern id="roadGrid" width="84" height="52" patternUnits="userSpaceOnUse">
+      <path d="M0 51.5H84" stroke="#91D9E8" stroke-opacity=".14"/>
+    </pattern>
+    <filter id="blur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="8" result="blurred"/>
+      <feMerge>
+        <feMergeNode in="blurred"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="frame">
+      <rect width="1420" height="1080" rx="40"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <path fill="url(#sky)" d="M0 0h1420v1080H0z"/>
+    <path fill="url(#moonGlow)" d="M0 0h1420v1080H0z"/>
+    <path fill="url(#horizon)" d="M0 370h1420v440H0z"/>
+    <g fill="#F4F4DD">
+      <circle cx="92" cy="118" r="3"/><circle cx="202" cy="211" r="2"/>
+      <circle cx="338" cy="82" r="2.5"/><circle cx="448" cy="172" r="2"/>
+      <circle cx="580" cy="105" r="3"/><circle cx="720" cy="214" r="2.5"/>
+      <circle cx="846" cy="91" r="2"/><circle cx="1268" cy="94" r="3"/>
+      <circle cx="1350" cy="252" r="2"/><circle cx="113" cy="310" r="2"/>
+      <circle cx="382" cy="272" r="2.5"/><circle cx="915" cy="295" r="2"/>
+      <circle cx="1226" cy="328" r="2.5"/>
+    </g>
+    <circle cx="1060" cy="182" r="104" fill="#D3F45B" fill-opacity=".12" filter="url(#blur)"/>
+    <path d="M1071 95c-52 17-70 82-35 122 24 28 66 33 96 13-27 56-100 74-151 37-54-39-55-119-4-160 27-22 63-28 94-12Z" fill="#E9F18C"/>
+    <path d="M0 537 179 404l156 129 148-169 181 174v210H0V537Z" fill="#211D3B"/>
+    <path d="m0 566 211-113 153 126 197-161 174 163v166H0V566Z" fill="#302349"/>
+    <path d="m835 555 145-158 139 133 117-102 184 142v177H835V555Z" fill="#27203E"/>
+    <path d="m922 566 150-118 120 128 115-95 113 99v167H922V566Z" fill="#382442"/>
+    <g opacity=".48" fill="#F58CB8">
+      <path d="m182 404 153 129-18 17-139-122-178 133v-29l179-128 3 2Z"/>
+      <path d="m483 364 181 174-21 17-160-155-138 108-14-17 152-125Z"/>
+      <path d="m980 397 139 133-21 17-119-114-125 136-20-19 146-153Z"/>
+    </g>
+    <path d="M0 548h160v270H0zm170-56h118v326H170zm127 87h148v231H297zm392-61h106v292H689zm114 44h160v248H803zm388-83h122v331h-122zm133 57h96v274h-96zm-310 58h164v216h-164z" fill="#171B2C"/>
+    <path d="M0 548h160v270H0zm170-56h118v326H170zm127 87h148v231H297zm392-61h106v292H689zm114 44h160v248H803zm388-83h122v331h-122zm133 57h96v274h-96zm-310 58h164v216h-164z" fill="url(#windows)" opacity=".55"/>
+    <g stroke="#E26FAE" stroke-opacity=".8">
+      <path d="M0 818h1420"/><path d="m350 810 260-146"/>
+      <path d="m1070 810-260-146"/>
+    </g>
+    <path d="m550 615-650 465h1620L870 615H550Z" fill="url(#road)"/>
+    <path d="m550 615-650 465h1620L870 615H550Z" fill="url(#roadGrid)" opacity=".85"/>
+    <path d="m550 615-650 465h1620L870 615H550Z" stroke="#77D5E4" stroke-opacity=".5" stroke-width="6"/>
+    <path d="m585 646-172 434h30l195-434h-53Zm250 0 172 434h-30L782 646h53Z" fill="#D3F45B" fill-opacity=".7" filter="url(#glow)"/>
+    <path d="M707 681h9l-5 82h-10l6-82Zm-14 112h39l5 106h-50l6-106Zm-17 141h73l8 146H667l9-146Z" fill="#F4E78D" fill-opacity=".78"/>
+    <path d="M210 670v148m1000-148v148" stroke="#D3F45B" stroke-opacity=".56" stroke-width="5"/>
+    <path d="M199 675h24l21 8v7h-64v-7l19-8Zm999 0h24l21 8v7h-64v-7l19-8Z" fill="#E9F18C"/>
+    <path d="m252 824 190-71 77 17 77 72v114l-39 40H318l-65-43-30-63 29-66Z" fill="url(#car)" stroke="#668275" stroke-width="5"/>
+    <path d="m442 765 84 20 57 53H384l25-48 33-25Z" fill="#303F55" stroke="#8ED9DF" stroke-opacity=".7" stroke-width="4"/>
+    <path d="m271 838 84-17-28 47-82 18 26-48Zm336 0-84-17 28 47 82 18-26-48Z" fill="#D3F45B" filter="url(#glow)"/>
+    <path d="M304 997v42m195-42v42" stroke="#111722" stroke-width="22" stroke-linecap="round"/>
+    <path d="m1041 732 110-41 47 10 46 42v69l-24 24h-180l-39-26-17-38 17-40Z" fill="#273447" stroke="#87DCE7" stroke-opacity=".65" stroke-width="4"/>
+    <path d="m1151 696 49 12 35 33h-119l15-29 20-16Z" fill="#44546B" stroke="#B5E4DE" stroke-opacity=".6" stroke-width="3"/>
+    <path d="m1053 740 48-10-16 29-47 11 15-30Zm194 0-48-10 16 29 47 11-15-30Z" fill="#F27EB1" filter="url(#glow)"/>
+    <path d="M1080 838v31m111-31v31" stroke="#111722" stroke-width="14" stroke-linecap="round"/>
+    <path d="M91 838v102m1238-102v102" stroke="#EF83BA" stroke-opacity=".7" stroke-width="4"/>
+    <path d="m82 913 36-9-17 33-40 12 21-36Zm1247 0-36-9 17 33 40 12-21-36Z" fill="#F27EB1"/>
+    <path d="M0 1018h1420" stroke="#D3F45B" stroke-opacity=".3" stroke-width="3"/>
+    <path d="m70 1042 275-24m1008 24-275-24" stroke="#F27EB1" stroke-opacity=".55" stroke-width="4"/>
+    <rect x="30" y="30" width="1360" height="1020" rx="32" stroke="#D3F45B" stroke-opacity=".12" stroke-width="2"/>
+  </g>
+</svg>
